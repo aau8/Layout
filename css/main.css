@@ -1,0 +1,50 @@
+/* Подключаю шрифты */
+@font-face {
+  font-family: 'Gilroy Medium';
+  src: url('../font/Gilroy-Medium.eot');
+  src: url('../font/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../font/Gilroy-Medium.woff') format('woff'),
+  url('../font/Gilroy-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  }
+@font-face {
+  font-family: 'Gilroy Bold';
+  src: url('../font/Gilroy-Bold.eot');
+  src: url('../font/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../font/Gilroy-Bold.woff') format('woff'),
+  url('../font/Gilroy-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  }
+body {
+  --bold-font: 'Gilroy Bold', sans-serif;
+  --medium-font: 'Gilroy Medium', sans-serif;
+  --main-color: #070707;
+  --second-color: #828282;
+}
+*,html,body {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  transition: all 0.3s;
+  outline: 0 !important;
+  outline-offset: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  color: var(--main-color);
+}
+h1,h2,h3,span {
+  font-family: var(--bold-font);
+  font-size: 34px;
+}
+p,a{
+  font-family: var(--medium-font);
+  font-size: 18px;
+}
+nav section footer {
+  width: 100%;
+}
+.lock {
+  overflow: hidden;
+}
