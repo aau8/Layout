@@ -203,11 +203,18 @@
 .content__lang-ru{
   color: var(--second-color);
 }
-.content__lang-ru:hover{
+.content__lang-ru:hover,
+.en-content__lang-en:hover{
   color: var(--main-color);
 }
 .content__lang-en{
   color: var(--main-color);
+}
+.en-content__lang-ru{
+  color: var(--main-color);
+}
+.en-content__lang-en{
+  color: var(--second-color);
 }
 .content__lang-line{
   width: 2px;
