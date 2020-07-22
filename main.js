@@ -22,6 +22,7 @@ $(document).ready(function () {
     var fixed_offset = 100; 
     $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - fixed_offset }, 1000); // пользователя переведет на указанный в href якорь со скоростью 1000ms и с отступом 100px сверху
     $('body').removeClass('lock');
+    $('.header__burger').removeClass('active');
     $('.header__menu').removeClass('active');
     e.preventDefault();
   });
