@@ -21,6 +21,8 @@ $(document).ready(function () {
   $("body").on('click', '[href*="#"]', function(e){ // при клике на элементы body содержащие в себе "href=#"  =>
     var fixed_offset = 100; 
     $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - fixed_offset }, 1000); // пользователя переведет на указанный в href якорь со скоростью 1000ms и с отступом 100px сверху
+    $('body').removeClass('lock');
+    $('.header__menu').removeClass('active');
     e.preventDefault();
   });
 
