@@ -520,6 +520,12 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   opacity: 0;
 }
+@media (max-width: 767px){
+  .arrow__up-image{
+    bottom: 25px;
+    left: 25px;
+  }
+}
 .arrow__up-image.active{
   opacity: 1;
 }
